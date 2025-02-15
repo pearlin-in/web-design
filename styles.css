@@ -128,6 +128,7 @@ body {
     padding: 20px;
 }
 
+
 .product-button {
     background-color: #c9def5;
     border: 1px solid #c9def5;
@@ -138,6 +139,9 @@ body {
     margin: 10px;
     cursor: pointer;
     padding: 10px;
+    text-decoration: none; 
+    color: inherit;
+    display: inline-block; 
 }
 
 .product-button:hover {
@@ -158,4 +162,142 @@ body {
     margin-top: 10px;
     font-size: 1.1em;
     color: #4579ae;
+}
+.console-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    scale: 105%;
+}
+
+.console-button {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.console-button img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.console-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 35, 35, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+
+}
+
+.console-button:hover .console-info {
+    opacity: 1;
+}
+
+.features-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 270px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #4579ae;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+    font-size: 14px;
+}
+.features {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.console-specs-box {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.console-specs-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(112, 108, 108, 0.2);
+}
+
+.console-specs-box h3 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.console-specs-box p {
+    color: #f9f9f9;
+    font-size: 1.1em;
+}
+
+#retro-console {
+    background-color: #2b2a4c; 
+}
+
+#portable-console {
+    background-color: #b31312; 
+}
+
+#high-performance-console {
+    background-color: #ea906c; 
 }
