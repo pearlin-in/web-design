@@ -7,8 +7,9 @@
 <body>
 
     <div class="header">
-        <h1> ATARI CONCOLES</h1>
+        <h1>ATARI CONSOLES</h1>
     </div>
+
     <div class="nav">
         <a href="hardware.html">Hardware</a>
         <a href="games.html">Games</a>
@@ -17,42 +18,52 @@
         <a href="eco.html">Eco</a>
         <a href="about.html">About</a>
     </div>
-    <div class="container" id="product-list">
-        
-    </div>
+
+    <div class="container" id="product-list"></div>
+
     <div class="console-container">
+        <!-- Atari 7800+ -->
         <div class="console-button">
             <img src="7800.webp" alt="Console 1">
             <div class="console-info">
                 <h3>Atari 7800+</h3>
-                <p> Regular price: $189.99 </p>
+                <p>Regular price: $189.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('7800')">View Specifications</button>
             </div>
         </div>
 
+        <!-- Atari 2600+ -->
         <div class="console-button">
             <img src="2600.webp" alt="Console 2">
             <div class="console-info">
                 <h3>Atari 2600+</h3>
                 <p>Regular price: $129.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('2600')">View Specifications</button>
             </div>
         </div>
 
+        <!-- Atari 5200 -->
         <div class="console-button">
             <img src="5200.jpg" alt="Console 3">
             <div class="console-info">
                 <h3>Atari 5200</h3>
                 <p>Regular price: $269.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('5200')">View Specifications</button>
             </div>
         </div>
 
+        <!-- Atari Jaguar -->
         <div class="console-button">
             <img src="jaguar.jpg" alt="Console 4">
             <div class="console-info">
                 <h3>Atari Jaguar</h3>
                 <p>Regular price: $249.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('jaguar')">View Specifications</button>
             </div>
         </div>
     </div>
+
+    <!-- Key Features Section -->
     <div class="features-section">
         <h2>Key Features of Our Consoles</h2>
         <div class="features-container">
@@ -69,44 +80,95 @@
                 <p>Widescreen mode and Enlarged cartridge socket reduces sticking.</p>
             </div>
         </div>
-        <div class="features">
-            <h2>Console Specifications</h2>
-            <div class="console-specs-box" style="background-color: #2b2a4c">
-                <h3>Atari 2600+</h3>
-                <p><strong>Processor Type:</strong> MOS Technology 6507 (8-bit)<br>
-                   <strong>Microprocessor:</strong> Rockchip 3128 SOC<br>
-                   <strong>RAM\Video RAM:</strong> 128 bytes \ None<br>
-                   <strong>Processor Speed:</strong> 1.19 MHz<br>
-                   <strong>Media Capacity:</strong> up to 4 KB</p>
-            </div>
-        
-            <div class="console-specs-box" style="background-color: #b31312">
-                <h3>Atari 7800+</h3>
-                <p><strong>Processor Type:</strong> Atari SALLY (8-bit custom 6502c)<br>
-                   <strong>Microprocessor:</strong> Rockchip 3128 SOC<br>
-                   <strong>Processor Speed:</strong> 1.79 MHz<br>
-                   <strong>RAM\Video RAM:</strong> 4 KB<br>
-                   <strong>Internal Storage:</strong> 4 KB ROM (BIOS)</p>
-            </div>
-        
-            <div class="console-specs-box" style="background-color: #ea906c;">
-                <h3>Atari 5200</h3>
-                <p><strong>Processor Type:</strong> 8-bit Custom Motorola 6502C<br>
-                   <strong>RAM\Video RAM:</strong> 16 KB<br>
-                   <strong> Processor Speed:</strong> 1.79 MHz<br>
-                   <strong>Internal Storage:</strong> 32 KB ROM (2 KB for system BIOS)<br>
-            </div>
+    </div>
 
-            <div class="console-specs-box" style="background-color: #413f6e;">
-                <h3>Atari Jaguar</h3>
-                <p><strong>Processor Type:</strong>5 processors contained in 3 chips: "Tom", "Jerry" and Motorola 68000<br>
-                   <strong>RAM\Video RAM:</strong> 2 MB of fast page mode DRAM (4 chips x 512 KB)<br>
-                   <strong> Processor Speed:</strong> "Tom" (26.6 MHz), "Jerry" (26.6 MHz) and a Motorola 68000 (13.3 MHz)<br>
-                   <strong>Media Capacity:</strong> Up to 84 MB<br>
+    <!-- Popup window for specifications -->
+    <div id="specs-popup-7800" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 7800+</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('7800')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="7800.webp" class="specs-popup-image" alt="Atari 7800">
+                    <p><strong>Processor Type:</strong> Atari SALLY (8-bit custom 6502c)<br>
+                       <strong>Microprocessor:</strong> Rockchip 3128 SOC<br>
+                       <strong>Processor Speed:</strong> 1.79 MHz<br>
+                       <strong>RAM\Video RAM:</strong> 4 KB<br>
+                       <strong>Internal Storage:</strong> 4 KB ROM (BIOS)</p>
+                </div>
             </div>
         </div>
-        
     </div>
-    
+
+    <div id="specs-popup-2600" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 2600+</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('2600')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="2600.webp" class="specs-popup-image" alt="Atari 2600">
+                    <p><strong>Processor Type:</strong> MOS Technology 6507 (8-bit)<br>
+                       <strong>Microprocessor:</strong> Rockchip 3128 SOC<br>
+                       <strong>Processor Speed:</strong> 1.19 MHz<br>
+                       <strong>Media Capacity:</strong> up to 4 KB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-5200" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 5200</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('5200')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="5200.jpg" class="specs-popup-image" alt="Atari 5200">
+                    <p><strong>Processor Type:</strong> 8-bit Custom Motorola 6502C<br>
+                       <strong>RAM\Video RAM:</strong> 16 KB<br>
+                       <strong>Processor Speed:</strong> 1.79 MHz<br>
+                       <strong>Internal Storage:</strong> 32 KB ROM (2 KB for system BIOS)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-jaguar" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari Jaguar</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('jaguar')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="jaguar.jpg" class="specs-popup-image" alt="Atari Jaguar">
+                    <p><strong>Processor Type:</strong> 5 processors contained in 3 chips: "Tom", "Jerry" and Motorola 68000<br>
+                       <strong>RAM\Video RAM:</strong> 2 MB of fast page mode DRAM (4 chips x 512 KB)<br>
+                       <strong>Processor Speed:</strong> "Tom" (26.6 MHz), "Jerry" (26.6 MHz) and a Motorola 68000 (13.3 MHz)<br>
+                       <strong>Media Capacity:</strong> Up to 84 MB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the popup window
+        function openSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "flex"; // Show the popup window
+        }
+
+        // Function to close the popup window
+        function closeSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "none"; // Hide the popup window
+        }
+    </script>
+
 </body>
 </html>
