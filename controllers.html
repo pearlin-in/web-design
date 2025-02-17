@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atari Consoles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>ATARI CONTROLLERS</h1>
+    </div>
+
+    <div class="nav">
+        <a href="hardware.html">Hardware</a>
+        <a href="games.html">Games</a>
+        <a href="collectibles.html" class="active">Collectibles</a>
+        <a href="eco.html">Eco</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container" id="product-list"></div>
+
+    <div class="console-container">
+        <!-- Atari 7800+ -->
+        <div class="console-button">
+            <img src="cx40.webp">
+            <div class="console-info">
+                <h3>CX40+ Joystick</h3>
+                <p>Regular price: $24.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('7800')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 2600+ -->
+        <div class="console-button">
+            <img src="5200c.jpg">
+            <div class="console-info">
+                <h3>Atari 5200</h3>
+                <p>Regular price: $12.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('2600')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 5200 -->
+        <div class="console-button">
+            <img src="touch.webp">
+            <div class="console-info">
+                <h3>Atari Touch Tablet CX-77</h3>
+                <p>Regular price: $79.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('5200')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari Jaguar -->
+        <div class="console-button">
+            <img src="jaguarc.jpg">
+            <div class="console-info">
+                <h3>Atari Jaguar</h3>
+                <p>Regular price: $21.99</p>
+                <button class="toggle-button" onclick="openSpecsPopup('jaguar')">View Specifications</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Features Section -->
+    <div class="features-section">
+        <h2>PRODUCT FEATURES</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Ergonomic</h3>
+                <p>The controllers are designed with big red buttons which are easy on the hand hence negating hand cramps</p>
+            </div>
+            <div class="feature">
+                <h3>DB9 / USB-A Connector</h3>
+                <p>Tried and true technology since 1977, compatible with all original Atari systems.</p>
+            </div>
+            <div class="feature">
+                <h3>Battery Life</h3>
+                <p>With more than 30 hours of play time per charge. With only 40 minutes of charging time</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-7800" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>CX40+ Joystick</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('7800')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="cx40.webp" class="specs-popup-image" alt="Atari 7800">
+                    <p><strong>Connection Type:</strong> DB9<br>
+                       <strong>Size:</strong> 4.21" x 4.09" x 5.12"<br>
+                       <strong>Weight:</strong> 0.5 lb<br>
+                       <strong>Wireless connectivity:</strong> DB9 and USB-C adapters<br>
+                       <strong>charging cable :</strong> USB-C </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-2600" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 5200 Controller</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('2600')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="5200c.jpg" class="specs-popup-image" alt="Atari 2600">
+                    <p><strong>Type:</strong> Analog joystick controller with numeric keypad<br>
+                       <strong>Buttons:</strong> 2 Action buttons and 12-button keypad<br>
+                       <strong>Overlays:</strong> Plastic card overlays for keypad functions (varied by game)<br>
+                       <strong>Connection:</strong> 15-pin proprietary connector</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-5200" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari Touch Tablet CX-77</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('5200')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="touch.webp" class="specs-popup-image">
+                    <p><strong>Brush & Color Options:</strong> 128 computer-generated colors with 8 brightness levels<br>
+                       <strong>Compatibility:</strong> Atari 8-bit computers (400, 800, 600XL, 800XL, 1200XL, 65XE, 130XE, XE Game Machine)<br>
+                       <strong>Brush Options:</strong> 8 brush widths<br>
+                       <strong>Connection:</strong> 9-pin Atari joystick port</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-jaguar" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari Jaguar Controller</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('jaguar')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="jaguarc.jpg" class="specs-popup-image">
+                    <p><strong>Dimensions:</strong> 6.25" W × 5" L × 1.75" H (16cm × 12.5cm × 4cm)<br>
+                       <strong>Cord Length:</strong> 7 ft (2.13m)<br>
+                       <strong>Overlay Slot:</strong>  2.75" × 2.25" (7cm × 5.6cm) for custom game labels<br>
+                       <strong>Buttons:</strong> 17 total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the popup window
+        function openSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "flex"; // Show the popup window
+        }
+
+        // Function to close the popup window
+        function closeSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "none"; // Hide the popup window
+        }
+    </script>
+
+</body>
+</html>
