@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ededed;
-    color: #faf5f5;
+    color: #eee2de;
 }
 
 .header {
-    background-color: #c9def5;
-    color: #61b190;
+    background-color: #2b2a4c;
+    color: #eee2de;
     padding: 20px 0;
     text-align: center;
 }
@@ -16,18 +16,18 @@ body {
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #dbe9f8;
+    background-color: #2b2a4c;
 }
 
 .nav a {
-    color: #0e4f90;
+    color: #eee2de;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
 }
 
 .nav a:hover {
-    background-color: #f8f9fa;
+    background-color: #ea906c;
 }
 
 .hero-section {
@@ -271,33 +271,19 @@ body {
     margin: 20px auto;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .console-specs-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(112, 108, 108, 0.2);
+    box-shadow: 0 8px 16px rgba(128, 126, 126, 0.2);
 }
 
 .console-specs-box h3 {
-    font-size: 1.8em;
+    font-size:x-large;
     color: #ffffff;
     margin-bottom: 15px;
 }
 
-.console-specs-box p {
-    color: #f9f9f9;
-    font-size: 1.1em;
-}
 
-#retro-console {
-    background-color: #2b2a4c; 
-}
 
-#portable-console {
-    background-color: #b31312; 
-}
-
-#high-performance-console {
-    background-color: #ea906c; 
-}
