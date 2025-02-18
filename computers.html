@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atari XE Computers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>ATARI XE COMPUTERS</h1>
+    </div>
+
+    <div class="nav">
+        <a href="hardware.html">Hardware</a>
+        <a href="games.html">Games</a>
+        <a href="collectibles.html" class="active">Collectibles</a>
+        <a href="eco.html">Eco</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container" id="product-list"></div>
+
+    <div class="console-container">
+        <!-- Atari 65XE Complete Package -->
+        <div class="console-button">
+            <img src="65xec.jpg" alt="Atari 65XE">
+            <div class="console-info">
+                <h3>Atari 65XE (Complete)</h3>
+                <p>Regular price: $185.00</p>
+                <button class="toggle-button" onclick="openSpecsPopup('65xe')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 65XE Computer Only -->
+        <div class="console-button">
+            <img src="65xe.jpg" alt="Atari 65XE">
+            <div class="console-info">
+                <h3>Atari 65XE (Computer Only)</h3>
+                <p>Regular price: $155.95</p>
+                <button class="toggle-button" onclick="openSpecsPopup('65xe-bare')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 130XE Complete Package -->
+        <div class="console-button">
+            <img src="130xec.jpg" alt="Atari 130XE">
+            <div class="console-info">
+                <h3>Atari 130XE</h3>
+                <p>Regular price: $185.95</p>
+                <button class="toggle-button" onclick="openSpecsPopup('130xe')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 130XE Rare 4-RAM Chip -->
+        <div class="console-button">
+            <img src="130xe.jpg" alt="Atari 130XE Rare">
+            <div class="console-info">
+                <h3>Atari 130XE (Rare 4-RAM Chip)</h3>
+                <p>Regular price: $235.00</p>
+                <button class="toggle-button" onclick="openSpecsPopup('130xe-rare')">View Specifications</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup windows for specifications -->
+    <div id="specs-popup-65xe" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 65XE (Complete Package)</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('65xe')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <img src="65xec.jpg" class="specs-popup-image" alt="Atari 65XE">
+                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                <strong>RAM:</strong> 64 KB<br>
+                <strong>Video Output:</strong> RF or optional Composite Video<br>
+                <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-65xe-bare" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 65XE (Computer Only)</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('65xe-bare')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <img src="65xe.jpg" class="specs-popup-image" alt="Atari 65XE">
+                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                <strong>RAM:</strong> 64 KB<br>
+                <strong>Video Output:</strong> RF or optional Composite Video<br>
+                <strong>Includes:</strong> Computer unit only</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-130xe" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 130XE</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('130xe')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <img src="130xec.jpg" class="specs-popup-image" alt="Atari 130XE">
+                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                <strong>RAM:</strong> 128 KB<br>
+                <strong>Video Output:</strong> RF or optional Composite Video<br>
+                <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-130xe-rare" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 130XE (Rare 4-RAM Chip)</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('130xe-rare')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <img src="130xe.jpg" class="specs-popup-image" alt="Atari 130XE Rare">
+                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                <strong>RAM:</strong> 128 KB (Rare 4-RAM chip version)<br>
+                <strong>Video Output:</strong> RF or optional Composite Video<br>
+                <strong>Availability:</strong> Extremely rare, only 2 units available</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Features Section -->
+    <div class="features-section">
+        <h2>Key Features of Atari XE Computers</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Classic Atari Aesthetic</h3>
+                <p>Iconic design that captures the retro look of Atari, offering a nostalgic computing experience.</p>
+            </div>
+            <div class="feature">
+                <h3>Reliable Performance</h3>
+                <p>Powered by the MOS Technology 6502C processor, delivering smooth gameplay and efficient multitasking.</p>
+            </div>
+            <div class="feature">
+                <h3>Expandable Memory</h3>
+                <p>Upgradeable RAM options allow you to enhance performance for more demanding applications.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+    <script>
+        function openSpecsPopup(consoleId) {
+            document.getElementById("specs-popup-" + consoleId).style.display = "flex";
+        }
+        function closeSpecsPopup(consoleId) {
+            document.getElementById("specs-popup-" + consoleId).style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
