@@ -5,11 +5,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="header">
-        <h1>ATARI XE COMPUTERS</h1>
-    </div>
-
+    <h1><center>ATARI XE COMPUTERS</center></h1>
     <div class="nav">
         <a href="hardware.html">Hardware</a>
         <a href="games.html">Games</a>
@@ -70,11 +66,13 @@
                 <button class="specs-popup-close" onclick="closeSpecsPopup('65xe')">×</button>
             </div>
             <div class="specs-popup-body">
-                <img src="65xec.jpg" class="specs-popup-image" alt="Atari 65XE">
-                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
-                <strong>RAM:</strong> 64 KB<br>
-                <strong>Video Output:</strong> RF or optional Composite Video<br>
-                <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+                <div style="display: flex; align-items: center;">
+                    <img src="65xec.jpg" class="specs-popup-image" alt="Atari 65XE">
+                    <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                        <strong>RAM:</strong> 64 KB<br>
+                        <strong>Video Output:</strong> RF or optional Composite Video<br>
+                        <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+                </div>
             </div>
         </div>
     </div>
@@ -86,11 +84,13 @@
                 <button class="specs-popup-close" onclick="closeSpecsPopup('65xe-bare')">×</button>
             </div>
             <div class="specs-popup-body">
-                <img src="65xe.jpg" class="specs-popup-image" alt="Atari 65XE">
-                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
-                <strong>RAM:</strong> 64 KB<br>
-                <strong>Video Output:</strong> RF or optional Composite Video<br>
-                <strong>Includes:</strong> Computer unit only</p>
+                <div style="display: flex; align-items: center;">
+                    <img src="65xe.jpg" class="specs-popup-image" alt="Atari 65XE">
+                    <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                        <strong>RAM:</strong> 64 KB<br>
+                        <strong>Video Output:</strong> RF or optional Composite Video<br>
+                        <strong>Includes:</strong> Computer unit only</p>
+                </div>
             </div>
         </div>
     </div>
@@ -102,11 +102,13 @@
                 <button class="specs-popup-close" onclick="closeSpecsPopup('130xe')">×</button>
             </div>
             <div class="specs-popup-body">
-                <img src="130xec.jpg" class="specs-popup-image" alt="Atari 130XE">
-                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
-                <strong>RAM:</strong> 128 KB<br>
-                <strong>Video Output:</strong> RF or optional Composite Video<br>
-                <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+                <div style="display: flex; align-items: center;">
+                    <img src="130xec.jpg" class="specs-popup-image" alt="Atari 130XE">
+                    <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                        <strong>RAM:</strong> 128 KB<br>
+                        <strong>Video Output:</strong> RF or optional Composite Video<br>
+                        <strong>Includes:</strong> Power Supply, RF Cable, TV Switch Box, Owner’s Manual</p>
+                </div>
             </div>
         </div>
     </div>
@@ -118,11 +120,13 @@
                 <button class="specs-popup-close" onclick="closeSpecsPopup('130xe-rare')">×</button>
             </div>
             <div class="specs-popup-body">
-                <img src="130xe.jpg" class="specs-popup-image" alt="Atari 130XE Rare">
-                <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
-                <strong>RAM:</strong> 128 KB (Rare 4-RAM chip version)<br>
-                <strong>Video Output:</strong> RF or optional Composite Video<br>
-                <strong>Availability:</strong> Extremely rare, only 2 units available</p>
+                <div style="display: flex; align-items: center;">
+                    <img src="130xe.jpg" class="specs-popup-image" alt="Atari 130XE Rare">
+                    <p><strong>Processor:</strong> MOS Technology 6502C (1.79 MHz)<br>
+                        <strong>RAM:</strong> 128 KB (Rare 4-RAM chip version)<br>
+                        <strong>Video Output:</strong> RF or optional Composite Video<br>
+                        <strong>Availability:</strong> Extremely rare, only 2 units available</p>
+                </div>
             </div>
         </div>
     </div>
@@ -147,9 +151,6 @@
     </div>
     
     
-
-
-
     <script>
         function openSpecsPopup(consoleId) {
             document.getElementById("specs-popup-" + consoleId).style.display = "flex";
