@@ -2,7 +2,7 @@ const products = [
     { name: "Hardware", description: "Cool hard machines.", image: "cat3.jpeg", link: "hardware.html" },
     { name: "Ecological Efforts", description: "Cool old stuff", image: "eco.jpeg", link: "eco.html" },
     { name: "Games", description: "Software..?", image: "game.jpeg", link: "games.html" },
-    { name: "Merch", description: "Why do they have merch>?", image: "merch.jpeg", link: "merch.html" }
+    { name: "collectibles", description: "Why do they have merch>?", image: "merch.jpeg", link: "collectibles.html" }
 ];
 
 const productList = document.getElementById('product-list');
