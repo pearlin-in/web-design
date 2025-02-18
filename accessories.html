@@ -17,9 +17,8 @@
 
     <div class="container" id="product-list"></div>
 
-    <!-- Keyboards Section -->
+   
     <div class="console-container">
-        <!-- Atari 600XL/800XL Reconditioned Keyboard -->
         <div class="console-button">
             <img src="800xl.jpg" alt="600XL Keyboard">
             <div class="console-info">
@@ -29,33 +28,31 @@
             </div>
         </div>
 
-        <!-- Atari 600XL/800XL PCB/Mechanical Switch Keyboard -->
+      
         <div class="console-button">
             <img src="midi.jpg">
             <div class="console-info">
                 <h3>Wizztronics Atari 8-Bit MIDIMAX MIDI</h3>
                 <p>Price: $130.00</p>
-                <button class="toggle-button" onclick="openSpecsPopup('pcb')">View Specifications</button>
+                <button class="toggle-button" onclick="openSpecsPopup('midi')">View Specifications</button>
             </div>
         </div>
 
-        <!-- Atari 600XL/800XL Lifetime XL Keyboard Mylar -->
         <div class="console-button">
             <img src="7800s.jpg">
             <div class="console-info">
                 <h3>Upgraded Atari 7800 Auto Switching Power Supply</h3>
                 <p>Price: $32.95</p>
-                <button class="toggle-button" onclick="openSpecsPopup('mylar')">View Specifications</button>
+                <button class="toggle-button" onclick="openSpecsPopup('7800')">View Specifications</button>
             </div>
         </div>
 
-        <!-- Atari 600XL/800XL 24-pin Pinch Connector -->
         <div class="console-button">
             <img src="8bit.jpg">
             <div class="console-info">
                 <h3>Atari 8-bit Disk Drive</h3>
                 <p>Price: $92.95</p>
-                <button class="toggle-button" onclick="openSpecsPopup('connector')">View Specifications</button>
+                <button class="toggle-button" onclick="openSpecsPopup('disk')">View Specifications</button>
             </div>
         </div>
     </div>
@@ -95,26 +92,26 @@
             
         </div>
     </div>
-    <div id="specs-popup-pcb" class="specs-popup">
+    <div id="specs-popup-midi" class="specs-popup">
         <div class="specs-popup-content">
             <div class="specs-popup-header">
                 <h3>MIDIMAX MIDI</h3>
-                <button class="specs-popup-close" onclick="closeSpecsPopup('pcb')">×</button>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('midi')">×</button>
             </div>
             <div class="specs-popup-body">
                 <p><strong>Type:</strong> MIDI interface for Atari 8-bit computers<br>
-                   <strong>Condition:</strong> Excellent, authentic Atari PCB<br>
+                   <strong>Condition:</strong> Excellent, authentic Atari midi<br>
                    <strong>Connectivity:</strong> Standard MIDI IN/OUT ports<br>
                    <strong>Included Software:</strong> Atari Disk-Based Midi Music System Interactive Music Editor</p>
             </div>
         </div>
     </div>
 
-    <div id="specs-popup-mylar" class="specs-popup">
+    <div id="specs-popup-7800" class="specs-popup">
         <div class="specs-popup-content">
             <div class="specs-popup-header">
                 <h3>Atari 7800 Auto Switching Power Supply</h3>
-                <button class="specs-popup-close" onclick="closeSpecsPopup('mylar')">×</button>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('7800')">×</button>
             </div>
             <div class="specs-popup-body">
                 <p><strong>Type:</strong> Power Supply<br>
@@ -125,11 +122,11 @@
         </div>
     </div>
 
-    <div id="specs-popup-connector" class="specs-popup">
+    <div id="specs-popup-disk" class="specs-popup">
         <div class="specs-popup-content">
             <div class="specs-popup-header">
                 <h3>Atari 810 Disk Drive</h3>
-                <button class="specs-popup-close" onclick="closeSpecsPopup('connector')">×</button>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('disk')">×</button>
             </div>
             <div class="specs-popup-body">
                 <p><strong>Storage Type:</strong> 24-pin Pinch Connector (Vertical Mount)<br>
