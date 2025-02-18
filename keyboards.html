@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atari Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><center>ATARI ACCESSORIES</center></h1>
+
+    <div class="nav">
+        <a href="hardware.html">Hardware</a>
+        <a href="games.html">Games</a>
+        <a href="collectibles.html">Collectibles</a>
+        <a href="eco.html">Eco</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container" id="product-list"></div>
+
+    <!-- Keyboards Section -->
+    <div class="console-container">
+        <!-- Atari 600XL/800XL Reconditioned Keyboard -->
+        <div class="console-button">
+            <img src="800xl.jpg" alt="600XL Keyboard">
+            <div class="console-info">
+                <h3>600XL/800XL Reconditioned Keyboard</h3>
+                <p>Price: $99.95</p>
+                <button class="toggle-button" onclick="openSpecsPopup('600xl')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 600XL/800XL PCB/Mechanical Switch Keyboard -->
+        <div class="console-button">
+            <img src="midi.jpg">
+            <div class="console-info">
+                <h3>Wizztronics Atari 8-Bit MIDIMAX MIDI</h3>
+                <p>Price: $130.00</p>
+                <button class="toggle-button" onclick="openSpecsPopup('pcb')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 600XL/800XL Lifetime XL Keyboard Mylar -->
+        <div class="console-button">
+            <img src="7800s.jpg">
+            <div class="console-info">
+                <h3>Upgraded Atari 7800 Auto Switching Power Supply</h3>
+                <p>Price: $32.95</p>
+                <button class="toggle-button" onclick="openSpecsPopup('mylar')">View Specifications</button>
+            </div>
+        </div>
+
+        <!-- Atari 600XL/800XL 24-pin Pinch Connector -->
+        <div class="console-button">
+            <img src="8bit.jpg">
+            <div class="console-info">
+                <h3>Atari 8-bit Disk Drive</h3>
+                <p>Price: $92.95</p>
+                <button class="toggle-button" onclick="openSpecsPopup('connector')">View Specifications</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Features Section -->
+    <div class="features-section">
+        <h2>Key Features of Our Accessories</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>High-Quality Build</h3>
+                <p>Each Accessories is designed with high-end materials for durability and long-lasting use.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy Installation</h3>
+                <p>Our products and parts are easy to install, ensuring a smooth and hassle-free setup.</p>
+            </div>
+            <div class="feature">
+                <h3>Easy connection to all Atari products</h3>
+                <p>All the Accessoriesand designed with the main Atari ecosystem in mind. Resulting in an easy to use and seemless connection with other Atari devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup windows for keyboard specifications -->
+    <div id="specs-popup-600xl" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>600XL/800XL Reconditioned Keyboard</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('600xl')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <p><strong>Type:</strong> Reconditioned Keyboard<br>
+                   <strong>Version:</strong> U.S. QWERTY Layout with additional function keys (OPTION, SELECT, START, HELP, RESET)<br>
+                   <strong>Condition:</strong> New<br>
+                   <strong>Key Mechanism:</strong> Plunger-style switches</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="specs-popup-pcb" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>MIDIMAX MIDI</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('pcb')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <p><strong>Type:</strong> MIDI interface for Atari 8-bit computers<br>
+                   <strong>Condition:</strong> Excellent, authentic Atari PCB<br>
+                   <strong>Connectivity:</strong> Standard MIDI IN/OUT ports<br>
+                   <strong>Included Software:</strong> Atari Disk-Based Midi Music System Interactive Music Editor</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-mylar" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 7800 Auto Switching Power Supply</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('mylar')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <p><strong>Type:</strong> Power Supply<br>
+                   <strong>Warranty:</strong> 90-day Atari Warranty<br>
+                   <strong>Condition:</strong> New<br>
+                   <strong>Model Number:</strong> 24471-001</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-connector" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Atari 810 Disk Drive</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('connector')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <p><strong>Storage Type:</strong> 24-pin Pinch Connector (Vertical Mount)<br>
+                   <strong>Capacity:</strong> 90 KB per disk side<br>
+                   <strong>Power:</strong>Rear power board with dual board setup<br>
+                   <strong>Condition:</strong> Refurbished</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the popup window for keyboard specs
+        function openSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "flex"; // Show the popup window
+        }
+
+        // Function to close the popup window for keyboard specs
+        function closeSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "none"; // Hide the popup window
+        }
+    </script>
+
+</body>
+</html>
