@@ -6,17 +6,6 @@ body {
     color: #eee2de;
 }
 
-.header {
-    background-color: #2b2a4c;
-    color: #eee2de;
-    padding: 10px;
-    text-align: center;
-}
-
-.header h1{
-    font-size: xxx-large;
-}
-
 .nav {
     display: flex;
     justify-content: center;
@@ -32,20 +21,6 @@ body {
 
 .nav a:hover {
     background-color: #ea906c;
-}
-
-.hero-section {
-    background:#2b2a4c;
-    color: #ea906c;
-    padding: 20px 20px;
-    text-align: center;
-}
-
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
 }
 
 .container {

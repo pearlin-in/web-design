@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ECO EFFORTS</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1><center>ECOLOGICAL EFFORTS</center></h1>
+
+    <div class="nav">
+        <a href="hardware.html">Hardware</a>
+        <a href="games.html">Games</a>
+        <a href="collectibles.html" class="active">Collectibles</a>
+        <a href="eco.html">Eco</a>
+        <a href="about.html">About</a>
+    </div>
+    <img src="environment.webp"  width="1550" height="300">
+
+    <h1><i><center> <br> <br>Our Commitment to Recycling and <br>
+            Eco-Friendly Practices        </center></i></h1>
+    <p><center><i>At Best Electronics, we are deeply committed to minimizing our environmental footprint. <br>
+        We have implemented several initiatives aimed at reducing waste, recycling materials, <br>
+        and promoting eco-friendly practices. Here’s a glimpse into the sustainable efforts we’ve made to protect our planet:</i></center></p>
+    <div class="container" id="product-list"></div>
+    <div class="console-container">
+        <div class="console-button">
+            <img src="Shipping.jpg">
+            <div class="console-info">
+                <h3>Biodegradable Shipping Peanuts</h3>
+                <p>We’ve recently switched to biodegradable shipping peanuts made from 100% recycled polystyrene. These eco-friendly peanuts decompose in 9–60 months</p>
+                <button class="toggle-button" onclick="openSpecsPopup('shipping')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="solar.jpg">
+            <div class="console-info">
+                <h3>Solar-Powered LED Lighting</h3>
+                <p>We’ve installed solar-powered, motion-detecting LED lights in our warehouse to reduce energy consumption and eliminate nighttime lighting.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('solar')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="sorting.jpg">
+            <div class="console-info">
+                <h3>Waste Sorting and Recycling</h3>
+                <p>Our waste management system effectively separates and recycles over 99% of recyclable materials, significantly reducing our environmental impact.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('sorting')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="recycle.jpg">
+            <div class="console-info">
+                <h3>Sustainable Recycling Practices</h3>
+                <p>Our recycling initiatives involve shredding, reusing, and repurposing materials to reduce waste and ensure responsible disposal.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('recycle')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="light.jpg">
+            <div class="console-info">
+                <h3>Energy-Efficient Lighting</h3>
+                <p>We use energy-efficient fluorescent, LED, and CFL bulbs in all offices and warehouses to reduce power consumption and promote sustainability.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('light')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="power.jpg">
+            <div class="console-info">
+                <h3>Powering Down Devicesr</h3>
+                <p>We ensure all electrical devices are powered down when not in use to minimize energy consumption and support environmental sustainability.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('power')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="paper.jpg">
+            <div class="console-info">
+                <h3>Sustainable Printing Practices</h3>
+                <p>We use inkjet printers with recycled or refilled ink cartridges for our Atari color flyers, conserving resources and minimizing the environmental impact of printing.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('paper')">View more</button>
+            </div>
+        </div>
+        <div class="console-button">
+            <img src="batteries.jpg">
+            <div class="console-info">
+                <h3>Rechargeable Batteries</h3>
+                <p>We use rechargeable batteries for office devices. This reduces the need for disposable batteries and helps minimize waste over time.</p>
+                <button class="toggle-button" onclick="openSpecsPopup('battery')">View more</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="specs-popup-shipping" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Biodegradable Shipping Peanuts</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('shipping')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                    <img src="e.png" class="specs-popup-image">
+                    <p>We've switched to biodegradable shipping peanuts made from 100% recycled polystyrene, which decompose in 9–60 months, reducing long-term waste. Though they cost more ($5–$7 per 13–14 cubic foot bag), we prioritize the environment. We also reuse standard peanuts from incoming packages to maximize material usage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-solar" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Solar-Powered LED Lighting</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('solar')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p>To reduce energy consumption, we’ve installed solar-powered, motion-detecting LED light fixtures throughout our Atari warehouse. These battery-powered lights offer a sustainable alternative to traditional fluorescent lighting, eliminating the need for nighttime lighting and significantly reducing electricity usage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-sorting" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Waste Sorting and Recycling</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('sorting')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p>We take pride in our efficient waste management system, where our team manually sorts trash bins each week to separate recyclable materials, including paper, cardboard, cans, and bottles. This process has led to a 99% reduction in recyclable waste in our trash. All sorted materials are properly recycled, minimizing our environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-recycle" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Sustainable Recycling Practices</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('recycle')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p> We are committed to reducing waste through comprehensive recycling practices. This includes shredding non-critical paperwork, reusing Atari boxes for shipping and storage, and repurposing packing materials like padded envelopes and shipping boxes. We ensure that once materials are no longer usable, they are recycled responsibly, further minimizing our environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-light" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Energy-Efficient Lighting</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('light')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p> In all our offices and warehouses, we use energy-efficient fluorescent, LED, and compact fluorescent lighting (CFL) bulbs. These lights consume less power and have a longer lifespan, making them a more sustainable choice for our business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-power" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Powering Down Devices</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('power')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p> We consistently power down all electrical devices when not in use, including computers, monitors, photocopiers, shipping tape machines, bag sealers, and lights. This practice minimizes standby power consumption, reduces energy usage, and supports our commitment to environmental sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-paper" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3>Sustainable Printing Practices</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('paper')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p> We utilize inkjet printers with recycled or refilled ink cartridges to print our Atari color flyers, which are included with each order. This practice helps conserve resources and reduces the environmental impact of printing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specs-popup-battery" class="specs-popup">
+        <div class="specs-popup-content">
+            <div class="specs-popup-header">
+                <h3> Rechargeable Batteries</h3>
+                <button class="specs-popup-close" onclick="closeSpecsPopup('battery')">×</button>
+            </div>
+            <div class="specs-popup-body">
+                <div style="display: flex; align-items: center;">
+                <img src="e.png" class="specs-popup-image">
+                    <p> Where possible, we prioritize the use of rechargeable batteries for office devices, such as wireless keyboards, mice, and other small electronics. By opting for rechargeable batteries, we significantly reduce the reliance on single-use disposable batteries, minimizing waste and contributing to long-term sustainability. This practice not only helps reduce our environmental footprint but also offers a more cost-effective solution over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "flex"; 
+        }
+
+        function closeSpecsPopup(consoleId) {
+            var popup = document.getElementById("specs-popup-" + consoleId);
+            popup.style.display = "none"; 
+        }
+    </script>
+</body>
+</html>
