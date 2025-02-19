@@ -22,6 +22,7 @@ Colours:
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Golos Text", serif;
 }
 
 body {
@@ -32,7 +33,6 @@ body {
 .navbar {
     background: #2b2a4c59;
     color: #22213f;
-    font-family: "Golos Text", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -77,7 +77,6 @@ body {
 
 #logo a {
     color: #22213f;
-    font-family: "Golos Text", serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -98,6 +97,38 @@ body {
 #nav-hr {
     color: #B31312;
     border-style: dotted;
+}
+
+#games {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text*/
+    color: #EEE2DE;
+    text-shadow: 2px 2px 4px #22213f;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+/* add */
+.hero-section {
+    text-align: center;
+    position: relative;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 8px #2B2A4C;
+    filter: brightness(70%);
+}
+
+.product img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
 }
 
 
