@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="collectiblestyles.css">
+    <link rel="stylesheet" href="../CSS/collectiblestyles.css">
     <link rel="stylesheet" href="../CSS/styles01.css">
+    <link rel="icon" type="image/x-icon" href="../Games/atari_coloured.png">
 </head>
 <body>
-    <div class="header">
-        <h1>ATARI x BEST ELECTRONICS</h1>
-    </div>
-    <div class="nav">
-        <a href="hardware.html">Hardware</a>
-        <a href="games.html">Games</a>
-        <a href="collectibles.html" class="active">Collectibles</a>
-        <a href="eco.html">Eco</a>
-        <a href="about.html">About</a>
-    </div>
-    <div class="container" id="product-list">
-        
-    </div>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div id="logo">
+                <img src="../Games/atari_coloured.png" alt="logo">
+                <a href="../main/index.html">
+                Best Electronics
+                </a>
+            </div>
+            <ul class="nav">
+                <li><a href="../Hardware/hardware.html">Hardware</a></li>
+                <li><a href="../Games/games.html">Games</a></li>
+                <span id="selected">
+                    <li><a href="../collectibles/collectibles.html">Collectibles</a></li>
+                </span>
+                <li><a href="../eco/eco.html">Eco</a></li>
+                <li><a href="../about/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <div class="container" id="product-list">
+    </div>
     <main class="catalog-container">
         <div class="collectible-item">
             <img src="t-shirt.jpg" alt="Limited Edition T-Shirt">
@@ -51,16 +60,6 @@
             <button class="buy-button">View Details</button>
         </div>
     </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 ATARI x BEST ELECTRONICS | All Rights Reserved</p>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>

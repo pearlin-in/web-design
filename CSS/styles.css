@@ -2,14 +2,14 @@ body {
     font-family: Georgia;
     margin: 0;
     padding: 0;
-    background-color: #2b2a4c;
-    color: #eee2de;
+    background-color:#eee2de; 
+    color: #2b2a4c;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #413f6e46;
+    background-color: #e2d4cf;
 }
 
 .nav a {
@@ -19,9 +19,6 @@ body {
     text-align: center;
 }
 
-.nav a:hover {
-    background-color: #ea906c;
-}
 
 .container {
     padding: 20px;
