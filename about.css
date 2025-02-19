@@ -1,0 +1,104 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: #EEE2DE;
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 30px 10%;
+    text-align: left;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #A94A4A;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #A94A4A;
+}
+
+.about-section img,
+.mission-section img,
+.story-section img {
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.hall-of-fame-section {
+    padding: 50px 10%;
+    background-color: #EA906C; 
+    text-align: center; 
+}
+
+.hall-of-fame-section h2,
+.hall-of-fame-section p {
+    color: #EEE2DE;
+    margin-bottom: 10px;
+}
+
+.hall-of-fame-images {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.hall-of-fame-images img {
+    width: 30%; 
+    height: auto; 
+}
+
+.timeline-section {
+    padding: 50px 10%;
+    background-color: #b3121218;
+    text-align: center;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.timeline-year {
+    width: 80px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #B31312;
+}
+
+.timeline-content {
+    background-color: #EEE2DE;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    align-items: center;
+}
+
+.timeline-content p {
+    margin: 0;
+}
