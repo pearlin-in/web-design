@@ -35,6 +35,7 @@ h1 {
 }
 
 /* nav bar */
+
 .navbar {
     background-color:  #2b2a4c7a;
     font-optical-sizing: auto;
@@ -47,7 +48,7 @@ h1 {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     /* border */
     border-style: double;
     border-radius: 8px;
@@ -78,13 +79,67 @@ h1 {
 }
 
 .nav li:hover {
-    border-bottom: 1px double #2b2a4c8f;
-    transition: 0.40s;
+    border-bottom: 1px solid #2b2a4c38;
+    transition: 0.30s;
     padding-bottom: 0px;
     margin-bottom: 3px;
 }
 
-.nav li:hover a {
-    color: #2B2A4C;
-    transition: 0.20s;
+.nav li:active a{
+    color: #EEE2DE;
+    transition: 0.15s
 }
+
+/* main section */
+
+#container {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    margin-right: 22px;
+    position: relative;
+}
+
+#container img {
+    height: 150px;
+    border-radius: 4px;
+}
+
+.child {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.title, .title-right {
+    color: #292847;
+    font-style: oblique;
+    font-size: 160px;
+    font-weight: 600;
+}
+
+.title-right {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+img:hover {
+    box-shadow: 0px 2px 3px #B31312;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+#container:hover .title, #container:hover .title-right {
+    filter: brightness(65%);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+#container:active {
+    filter: brightness(60%);
+    transition: 0.15s;
+}
+
+/* footer */
