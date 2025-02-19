@@ -1,0 +1,90 @@
+/*
+Colours: 
+#2B2A4C (Purple)
+#B31312 (Red)
+#EEE2DE (White)
+
+<weight>: Use a value from 400 to 900
+<uniquifier>: Use a unique and descriptive class name
+
+.golos-text-<uniquifier> {
+  font-family: "Golos Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Golos Text", serif;
+}
+
+body {
+    background-color: #EEE2DE;
+}
+
+h1 {
+    color: #2B2A4C;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* nav bar */
+.navbar {
+    background-color:  #2b2a4c7a;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* border */
+    border-style: double;
+    border-radius: 8px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.nav li {
+    padding: 5px;
+    /*border*/
+    border-bottom: 1px solid #2b2a4c00;
+}
+
+.nav a {
+    color: #2B2A4C;
+}
+
+.nav li:hover {
+    border-bottom: 1px double #2b2a4c8f;
+    transition: 0.40s;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+}
+
+.nav li:hover a {
+    color: #2B2A4C;
+    transition: 0.20s;
+}

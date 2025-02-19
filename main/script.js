@@ -1,8 +1,8 @@
 const products = [
-    { name: "Hardware", description: "Cool hard machines.", image: "cat3.jpeg", link: "hardware.html" },
-    { name: "Ecological Efforts", description: "Cool old stuff", image: "eco.jpeg", link: "eco.html" },
-    { name: "Games", description: "Software..?", image: "game.jpeg", link: "Games/games.html" },
-    { name: "collectibles", description: "Why do they have merch>?", image: "merch.jpeg", link: "collectibles.html" }
+    { name: "Hardware", description: "Cool hard machines.", image: "cat3.jpeg", link: "../Hardware/hardware.html" },
+    { name: "Ecological Efforts", description: "Cool old stuff", image: "eco.jpeg", link: "../eco/eco.html" },
+    { name: "Games", description: "Software..?", image: "game.jpeg", link: "../Games/games.html" },
+    { name: "collectibles", description: "Why do they have merch>?", image: "merch.jpeg", link: "../collectibles/collectibles.html" }
 ];
 
 const productList = document.getElementById('product-list');
