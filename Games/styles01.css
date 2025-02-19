@@ -74,6 +74,14 @@ body {
     color: #2B2A4C;
 }
 
+#selected a {
+    color: #2B2A4C;
+}
+
+#selected li {
+    background-color: #EEE2DE;
+}
+
 #logo {
     display: flex;
     align-items: center;
@@ -94,10 +102,14 @@ body {
 }
 
 .nav li:hover {
-    color: #EEE2DE;
     border-color: #B31312;
     background-color: #2B2A4C;
-    transition: 0.22s;
+    transition: 0.20s;
+}
+
+.nav li:hover a {
+    color: #EEE2DE;
+    transition: 0.20s;
 }
 
 #hero-txt {
@@ -175,12 +187,15 @@ body {
 }
 
 .box:hover {
-    color: #EEE2DE;
     border-color: #B31312;
     background-color: #2B2A4C;
-    transition: 0.22s;
+    transition: 0.20s;
 }
 
+.box:hover span {
+    color: #EEE2DE;
+    transition: 0.20s;
+}
 
 
 
