@@ -6,20 +6,6 @@ body {
     color: #2b2a4c;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    background-color: #e2d4cf;
-}
-
-.nav a {
-    color: #eee2de;
-    padding: 12px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-
 .container {
     padding: 20px;
     display: flex;
