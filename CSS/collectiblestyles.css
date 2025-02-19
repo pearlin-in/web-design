@@ -3,15 +3,15 @@ body {
     font-family: Georgia, serif;
     margin: 0;
     padding: 0;
-    background-color: #ededed;
-    color: #333;
+    background-color:#eee2de; 
+    color: #2b2a4c;
     
 }
 
 /* Header Styles */
 .header {
-    background-color: #c9def5;
-    color: #61b190;
+    background-color: #eee2de; 
+    color:#2b2a4c;
     padding: 20px 0;
     text-align: center;
 }
@@ -21,13 +21,6 @@ body {
     margin: 0;
 }
 
-/* Navigation Bar Styles */
-.nav {
-    display: flex;
-    justify-content: center;
-    background-color: #dbe9f8;
-}
-
 .nav a {
     color: #0e4f90;
     padding: 14px 20px;
@@ -35,15 +28,12 @@ body {
     text-align: center;
 }
 
-.nav a:hover {
-    background-color: #f8f9fa;
-}
+
 
 .nav a.active {
     background-color: #a1c6f1;
 }
 
-/* Catalog Container Styles */
 .catalog-container {
     display: flex;
     flex-wrap: wrap;
@@ -94,33 +84,6 @@ body {
 
 .buy-button:hover {
     background-color: #365e8c;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #c9def5;
-    color: #61b190;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links {
-    margin-top: 15px;
-}
-
-.footer-links a {
-    color: #0e4f90;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
