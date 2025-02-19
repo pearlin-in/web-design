@@ -130,11 +130,14 @@ body {
     margin-top: 20px;
 }
 
+.hero-section img {
+    box-shadow: 0px 5px 5px#2b2a4cc0;
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 5px 5px#2b2a4cc0;
     filter: brightness(70%);
     /* size */
     width: 800px;
