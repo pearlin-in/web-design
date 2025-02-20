@@ -93,6 +93,26 @@ body {
     margin: 5px 0;
 }
 
+.welcome-header {
+    background: url('C:\Users\Jerob\vs git\web-design-1\collectibles\images\collectible_background.jpg');
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.welcome-header p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 @media (max-width: 768px) {
     body {
