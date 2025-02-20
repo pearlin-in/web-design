@@ -7,15 +7,9 @@ Colours:
 <weight>: Use a value from 400 to 900
 <uniquifier>: Use a unique and descriptive class name
 
-.golos-text-<uniquifier> {
-  font-family: "Golos Text", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Orbitron:wght@400..900&display=swap');
 
 * {
     margin: 0;
@@ -91,7 +85,8 @@ body {
 #logo a {
     color: #2B2A4C;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 620;
+    font-family: "Orbitron", serif;
 }
 
 #logo img {
@@ -180,6 +175,7 @@ body {
     color: #2B2A4C;
     font-size: 22px;
     font-weight: 500;
+    font-family: "Orbitron", serif;
 }
 
 .box:hover {
