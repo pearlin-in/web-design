@@ -80,8 +80,8 @@ h1 {
 }
 
 .nav li:hover {
-    border-bottom: 1px solid #2b2a4c38;
-    transition: 0.20s;
+    border-bottom: 1px solid #b3121221;
+    transition: 0.15s;
     padding-bottom: 0px;
     margin-bottom: 3px;
 }

@@ -1,8 +1,7 @@
 body {
-    font-family: Georgia;
     margin: 0;
     padding: 0;
-    background-color:#eee2de; 
+    background-color:#EEE2DE; 
     color: #2b2a4c;
 }
 
@@ -218,20 +217,22 @@ body {
 
 
 .features-section {
-    background-color: #eee2de;
+    background-color: #EEE2DE;
     padding: 40px 20px;
     text-align: center;
 }
 
 .features-section h2 {
     margin-bottom: 70px;
-    font-size: xxx-large;
-    color: #b31312;
+    font-size: 42px;
+    color: #a51111;
+    text-shadow: 0px 1px 2px #2B2A4C;
+    text-transform: uppercase;
 }
 
 .features-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     max-width: 1200px;
@@ -246,8 +247,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.feature:hover p{
+    color: #2B2A4C;
+    transition: 0.40s ease-in-out;
+}
+
 .feature h3 {
-    color: #ea906c;
+    color: #2B2A4C;
     font-size: x-large;
     margin-bottom: 10px;
 }
