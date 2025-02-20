@@ -94,7 +94,7 @@ body {
 }
 
 .welcome-header {
-    background: url('C:\Users\Jerob\vs git\web-design-1\collectibles\images\collectible_background.jpg');
+    background: url('../collectibles/images/collectible_background.jpg');
     color: white;
     text-align: center;
     padding: 80px 20px;
