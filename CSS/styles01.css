@@ -85,7 +85,8 @@ body {
 #logo a {
     color: #2B2A4C;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 620;
+    font-family: "Orbitron", serif;
 }
 
 #logo img {
@@ -174,6 +175,7 @@ body {
     color: #2B2A4C;
     font-size: 22px;
     font-weight: 500;
+    font-family: "Orbitron", serif;
 }
 
 .box:hover {
