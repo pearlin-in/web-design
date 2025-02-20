@@ -86,6 +86,14 @@ body {
     background-color: #365e8c;
 }
 
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600; /* Highlighted price */
+    margin: 5px 0;
+}
+
+
 @media (max-width: 768px) {
     body {
         margin-left: 5%; /* Less left margin for small screens */
