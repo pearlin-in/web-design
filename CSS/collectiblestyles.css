@@ -78,9 +78,13 @@ body {
 }
 
 .collectible-item p {
-    color: #666;
+    color: black;
     margin: 5px 0;
-    font-size: 1.5em; /* Adjust font size for consistency */
+    font-size: 1.2em; /* Adjust font size for consistency */
+}
+
+.collectible-item:hover p {
+    color: white;
 }
 
 .title-price-container {
