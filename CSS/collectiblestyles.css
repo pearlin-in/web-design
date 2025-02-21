@@ -21,18 +21,6 @@ body {
     margin: 0;
 }
 
-.nav a {
-    color: #0e4f90;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-
-.nav a.active {
-    background-color: #a1c6f1;
-}
 
 .catalog-container {
     display: flex;
