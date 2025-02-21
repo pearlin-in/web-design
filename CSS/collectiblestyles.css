@@ -159,10 +159,10 @@ body {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #413f6e;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #413f6e;
     border-radius: 15px;
     width: 50%;
     max-width: 600px;
@@ -192,7 +192,7 @@ body {
 
 #modalTitle {
     font-size: 1.5em;
-    color: #2b2a4c;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -200,6 +200,6 @@ body {
 #modalPrice,
 #modalItemCode {
     font-size: 1em;
-    color: #666;
+    color: white;
     margin-bottom: 10px;
 }
