@@ -2,7 +2,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     background-color: #EEE2DE;
-    color: white;
     text-align: center;
 }
 
@@ -12,15 +11,17 @@ section {
 }
 
 section h2 {
+    font-family: "Orbitron", serif;
     font-size: 32px;
-    margin-bottom: 10px;
-    color: #A94A4A;
+    margin-bottom: 15px;
+    color: #2B2A4C;
 }
 
 section p {
     font-size: 18px;
     line-height: 1.6;
-    color: #A94A4A;
+    color: #2B2A4C;
+    text-align: justify;
 }
 
 .about-section img,
@@ -43,60 +44,74 @@ section p {
 }
 
 .hall-of-fame-section {
+    margin-top: 25px;
     padding: 50px 10%;
-    background-color: #EA906C; 
-    text-align: center; 
+    background-color: #2b2a4c7a; 
+    box-shadow: 0px 0px 10px#2b2a4c54 inset;
 }
 
 .hall-of-fame-section h2,
 .hall-of-fame-section p {
-    color: #EEE2DE;
-    margin-bottom: 10px;
+    color: #2B2A4C;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hall-of-fame-section h2 {
+    font-family: "Orbitron", serif;
 }
 
 .hall-of-fame-images {
     display: flex;
     justify-content: center; 
     gap: 20px; 
+    margin-top: 30px;
 }
 
 .hall-of-fame-images img {
-    width: 30%; 
+    width: 32%; 
     height: auto; 
+    border-radius: 2%;
+    box-shadow: 0px 4px 5px #2b2a4cc4;
 }
 
 .timeline-section {
     padding: 50px 10%;
-    background-color: #b3121218;
+    margin-bottom: -20px;
+}
+
+.timeline-section h2 {
     text-align: center;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-family: "Orbitron", serif;
 }
 
 .timeline-container {
-    max-width: 800px;
+    max-width: 870px;
     margin: auto;
 }
 
 .timeline-item {
     display: flex;
     align-items: center;
+    justify-content: start;
     margin: 20px 0;
 }
 
 .timeline-year {
-    width: 80px;
     font-weight: bold;
     font-size: 24px;
-    color: #B31312;
+    color: #2B2A4C;
+    position: absolute;
 }
 
 .timeline-content {
-    background-color: #EEE2DE;
-    color: #FFF;
+    background-color: #2b2a4c7a;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 20px;
-    align-items: center;
+    box-shadow: 0 0px 7px #6e0c0ca4 inset;
+    margin-left: 16%;
 }
 
 .timeline-content p {

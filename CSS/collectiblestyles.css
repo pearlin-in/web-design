@@ -1,11 +1,9 @@
 /* General Body Styles */
 body {
-    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     background-color:#eee2de; 
     color: #2b2a4c;
-    
 }
 
 /* Header Styles */
@@ -86,7 +84,6 @@ body {
     color: white;
     text-align: center;
     padding: 80px 20px;
-    font-family: 'Arial', sans-serif;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
