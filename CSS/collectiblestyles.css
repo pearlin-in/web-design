@@ -28,7 +28,7 @@ body {
 }
 
 .collectible-item {
-    background-color: #ffffff;
+    background-color: #2b2a4c7a;
     border: 1px solid #ddd;
     border-radius: 15px;
     text-align: center;
@@ -55,9 +55,10 @@ body {
 }
 
 .collectible-item h3 {
-    color: #4579ae;
+    color: #2B2A4C;
     margin: 15px 0;
     font-size: 1.2em; /* Adjust font size for consistency */
+    font-family: "Orbitron", serif;
 }
 
 .collectible-item p {
@@ -67,7 +68,7 @@ body {
 }
 
 .buy-button {
-    background-color: #4579ae;
+    background-color: #2B2A4C;
     color: #fff;
     border: none;
     padding: 10px 15px;
