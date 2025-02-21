@@ -101,12 +101,18 @@ body {
     font-size: 3rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    color: #EEE2DE;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 600;
+    font-size: 50px;
 }
 
 .welcome-header p {
     font-size: 1.4rem;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 600;
 }
 
 /* This is for the Sidebar */
