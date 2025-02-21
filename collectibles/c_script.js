@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const itemCategory = item.getAttribute("data-year");
 
             if (selectedCategory === "all" || itemCategory === selectedCategory) {
-                item.style.display = "block";
+                item.style.display = "flex";
             } else {
                 item.style.display = "none";
             }

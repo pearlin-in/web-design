@@ -28,18 +28,18 @@ body {
 }
 
 .collectible-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #2b2a4c7a;
     border: 1px solid #ddd;
     border-radius: 15px;
     text-align: center;
-    width: 250px; /* Fixed width */
+    width: 250px;
     height: 400px; /* Fixed height */
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
 }
 
 .collectible-item:hover {
@@ -56,16 +56,24 @@ body {
 
 .collectible-item h3 {
     color: #2B2A4C;
-    margin: 15px 0;
-    font-size: 1.2em; /* Adjust font size for consistency */
+    margin: 0 0 10px 0; /* Add spacing below the title */
+    font-size: 1.2em;
     font-family: "Orbitron", serif;
+    text-align: center;
 }
 
 .collectible-item p {
     color: #666;
     margin: 5px 0;
-    font-size: 0.9em; /* Adjust font size for consistency */
+    font-size: 1.5em; /* Adjust font size for consistency */
 }
+
+.title-price-container {
+    width: 100%;
+    margin: 15px 0; /* Add spacing between image and title/price */
+}
+
+
 
 .buy-button {
     background-color: #2B2A4C;
@@ -76,18 +84,22 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 1em;
+    width: 100%; /* Make button full width */
+    margin-top: auto; /* Push button to the bottom */
 }
 
 .buy-button:hover {
     background-color: #365e8c;
 }
 
+
 .price {
     font-size: 18px;
     font-weight: bold;
     color: #ff6600; /* Highlighted price */
-    margin: 5px 0;
+    margin: 0; /* Remove default margin */
 }
+
 
 .welcome-header {
     background: url('../collectibles/images/collectible_background.jpg');
@@ -119,6 +131,7 @@ body {
 .sidebar {
     width: 200px;
     padding: 20px;
+    padding-left: 80px;
 }
 
 .sidebar h2 {
@@ -167,7 +180,7 @@ body {
 .modal-content {
     background-color: #413f6e;
     margin: 10% auto;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     border: 1px solid #413f6e;
     border-radius: 15px;
     width: 50%;
@@ -197,15 +210,15 @@ body {
 }
 
 #modalTitle {
-    font-size: 1.5em;
+    font-size: 2em; 
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #modalDescription,
 #modalPrice,
 #modalItemCode {
-    font-size: 1em;
+    font-size: 1.2em; 
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
