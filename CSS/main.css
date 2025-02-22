@@ -203,7 +203,8 @@ h1 {
     margin-bottom: 15px; 
     font-weight: 600; 
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
+    padding-right: 10px;
 }
 
 .author {
