@@ -12,16 +12,42 @@
     <nav class="navbar">
         <div class="navdiv">
             <div id="logo">
-                <img src="atari_coloured.png" alt="logo">
+                <img src="../Games/atari_coloured.png" alt="logo">
                 <a href="../main/index.html">
                 Best Electronics
                 </a>
             </div>
             <ul class="nav">
-                <li><a href="../Hardware/hardware.html">Hardware</a></li>
-                <span id="selected">
-                    <li><a href="games.html">Games</a></li>
-                </span>
+                <div class="dropdown">
+                    <li class="drop-btn"><a href="../Hardware/hardware.html">Hardware</a></li>
+                    <div class="dropdown-content">
+                        <a href="../Hardware/consoles.html">
+                            Consoles
+                        </a>
+                        <a href="../Hardware/computer.html">
+                            Computers
+                        </a>
+                        <a href="../Hardware/accessories.html">
+                            Accessories
+                        </a>
+                        <a href="../Hardware/controllers.html">
+                            Controllers
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span id="selected">
+                        <li class="drop-btn"><a href="../Games/games.html">Games</a></li>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="../Games/cartridge.html">
+                            Cartridges
+                        </a>
+                        <a href="../Games/boxed.html">
+                            Boxed
+                        </a>
+                    </div>
+                </div>
                 <li><a href="../collectibles/collectibles.html">Collectibles</a></li>
                 <li><a href="../eco/eco.html">Eco</a></li>
                 <li><a href="../about/about.html">About</a></li>
